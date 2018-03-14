@@ -1,0 +1,86 @@
+/*全局样式*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:#303030;
+    font-size: 14px;
+}
+.headTop{
+    height: 142px;
+}
+.head-a{
+    background: #333;
+}
+
+.header-container{
+    height: 83px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+.container{
+    margin-right:auto;
+    margin-left:12px ;
+    width: 1240px;
+    
+} 
+
+.pr{
+    height: 46px;
+}
+/*logo*/
+.head-a .head-logo{
+    width: 100px;
+    height: 38px;
+    background:url(../img/nuandao.png) no-repeat -50px -280px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    float:left;
+    text-indent: -999em;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+    width: 100px;
+    height: 38px;
+    display: block;
+}
+
+/*input*/
+.head-search{
+    
+    float: left;
+    padding-top: 5px;
+}
+.head-search .header-search-input{
+    display: block;
+    width: 360px;
+    height: 36px;
+    padding: 4px 0 5px 30px;
+    background: #fff;
+    font-size: 16px;
+    position: relative;
+    left: 18px;
+}
+input{
+    border: none;
+}
+.head-search i{
+    width: 13px;
+    height: 13px;
+    background:url(../img/nuandao.png) no-repeat -260px -280px;
+    left: 140px;
+    top: 17px;
+    position: absolute;
+}
+#header-hirt{
+    display: block;
+    line-height:46px;
+    color:#e396ff;
+    font-size: 13px;
+    margin-left: 494px;
+}
