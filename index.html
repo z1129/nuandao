@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<!--<link rel="stylesheet" type="text/css" href="css/index.min.css"/>-->
-		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="gulp/css/index.min.css" />
 	</head>
-	<body style="height: 4567px;">
+	<body>
 		<!--头部-->
 		<div id="header" class="headTop">
 			<div id="pox">
@@ -30,7 +30,11 @@
 							<a href="#" class="nav-fnum"><i></i><span class="span-fnum">25.8万</span></a>
 							<a href="#" class="nav-add"><span class="span-add">加关注</span></a>
 						</li>
-						<li>登录 | 注册</li>
+						<li> 
+							<a href="#">注册</a>
+							<a href="#" class="a-w">|</a>
+							<a href="#">登录 </a>
+						</li>
 						<li>|</li>
 						<a href="#" class="nav-car">
 							<span>购物车</span>
@@ -53,28 +57,450 @@
 						</ul>
 						<ul class="nav-right">
 							<li><a href="#"><span></span>邀请好友立送20元</a></li>
-							<li><a href="#"><span></span>手机版</a></li>
-							<li><a href="#"><span></span></a></li>
+							<li class="a-phone">
+								<a href="#">
+									<span></span>手机版
+									<i class="phone">
+									</i>
+								</a>
+							</li>
+							<li class="a-wxin">
+								<a href="#">
+									<span></span>
+									<i class="wecaht"></i>
+								</a>
+							</li>
 						</ul>
+						
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="solid">
-			<ul>
-				<li></li>
-				<li></li>
+		<!--轮播图-->
+		<div class="banner" id="banner">
+			<ul class="img-list" id="img-list">
+				<li><img src="img/5a96745d4d652.jpg"></li>
+				<li><img src="img/5aa638f35c84c.jpg"></li>
+				<li><img src="img/5a96745d4d652.jpg"></li>
 			</ul>
+			
+			<ul class="banner-nav-list" id="banner-nav-list">
+				<li class="avtive">Fleur</li>
+				<li class="avtive">女生节</li>
+			</ul>
+			<div id="arr">
+				<div class="toLeft" id="toLeft"></div>
+				<div class="toRight" id="toRight"></div>
+			</div>
 		</div>
 		
 		
+		<!--轮播图下的小标题-->
+		<div class="ban-tit">
+			<img src="img/highlights-980.png"/>
+		</div>
+		
+		<!--今日热点-->
+		<div class="sale-today">
+			<div class="sale-top">
+				<h3>今日热点</h3>
+				
+				<dl class="over">
+					<dd class="dd-top">
+						<a href="#">
+							<img src="img/today1.jpg"/>
+							<span class="dd-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>生活更"轻"松</dt>
+				</dl>
+				
+				<dl class="over">
+					<dd class="dd-top">
+						<a href="#">
+							<img src="img/today2.jpg"/>
+							<span class="dd-tit">Solove素乐创意便捷</span>
+						</a>
+						
+					</dd>
+					<dt>让心灵得以回归</dt>
+				</dl>
+				
+				<dl class="over">
+					<dd class="dd-top">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="dd-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl id="no-right" class="over">
+					<dd class="dd-top">
+						<a href="#">
+							<img src="img/today4.jpg"/>
+							<span class="dd-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>大男孩可爱心</dt>
+				</dl>
+			</div>
+			<div class="sale-bottom">
+				<a href="#"><img src="img/5a967a9be139f.jpg"/></a>
+				<a href="#"><img src="img/5a967b36517c6.jpg"/></a>
+			</div>
+		</div>
 		
 		
+		<!--本周特卖-->
+		<div class="sale-week">
+			<div class="week-top">
+				<div class="hot">
+					<h3>今日热点</h3><span class="goods">回顾本周新品 享持续特卖价</span>	
+				</div>
+				
+				<!--第一行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today1.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>生活更"轻"松</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today2.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+						
+					</dd>
+					<dt>让心灵得以回归</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl class="enter">
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				
+				<!--第二行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<!--第三行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<!--第四行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<!--第五行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<!--第六行-->
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+				<dl class="no-right enter">
+					<dd class="week-up">
+						<a href="#">
+							<img src="img/today3.jpg"/>
+							<span class="week-tit">Solove素乐创意便捷</span>
+						</a>
+					</dd>
+					<dt>卧床舒心,一夜好梦</dt>
+				</dl>
+				
+			</div>
+			
+		</div>
 		
+		<!--foot  底部-->
+		<div class="footer">
+			<div class="f-top">
+				<div class="f-l">
+					<ul class="ul-1">
+						<li>
+							<a href="#">逛逛暖鸟</a>
+							<ul>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">订单详情</a>
+							<ul>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+							</ul>
+						</li>
+						<li><a href="#">退货换货</a>
+							<ul>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+							</ul>
+						</li>
+						<li><a href="#">关于暖鸟</a>
+							<ul>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+								<li><a href="#">逛逛暖鸟</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="f-r">
+					<h5>订阅电子报</h5>
+					<div id="f-search">
+						<input type="text" name="txt2" id="txt2" placeholder="请输入邮箱地址"/><input type="button" name="email" id="email" value="订阅" /><i></i>
+					</div>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#" class="wx"></a><span class="weixin"></span></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<div class="f-bot">
+				<div class="ul-left">
+					<ul class="ul-bot">
+						<li><a href="#">使用条款</a></li>
+						<li class="li-1"><a href="#">|</a></li>
+						<li><a href="#">暖岛APP</a></li>
+						<li class="li-1"><a href="#">|</a></li>
+						<li><a href="#">友情链接</a></li>
+					</ul>
+					<div>
+						Nuandao.com 北京暖岛网络信息科技有限公司 © 2011-2016 All rights reserved 京ICP备13034710号-1 | 京公网安备11010102001819号 | 执照号：91110108584425669B | 食品经营许可证：
+					</div>
+				</div>
+				<div class="ul-right">
+					<div class="right-t">
+						<img src="img/315icon.gif"/>
+					</div>
+					<div class="right-b">
+						<p>周一至周五9:30-18:00</p>
+						<p>客服热线：021-50276566</p> 
+
+					</div>
+				</div>
+				
+			</div>
+				
+		</div>
 		
-		
-		
-		
+		<!--回到顶部-->
+		<div class="to-top">
+			<i></i>
+		</div>
 		
 		
 		
@@ -87,6 +513,8 @@
 		
 		
 		<!--导入js-->
-		<script type="text/javascript" src="js/index.js" ></script>
+		<!--<script type="text/javascript" src="js/index.js" ></script>-->
+		<script type="text/javascript" src="gulp/src/js/jquery-1.11.3.js" ></script>
+		<script type="text/javascript" src="gulp/src/js/index.js" ></script>
 	</body>
 </html>
