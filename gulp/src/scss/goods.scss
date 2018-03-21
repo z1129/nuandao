@@ -1,0 +1,851 @@
+/*全局样式*/
+@charset "utf-8";
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0}
+body{font-family: "微软雅黑";}
+ul,ol,li{list-style:none;}
+b,strong{font-weight:100;}
+em,i{font-style:normal;}
+h1,h2,h3,h4,h5,h6{font-weight:100;font-size:16px;}
+a,u{text-decoration: none;color: #cdcdcd;}
+input{outline:none;border: none;}
+img{display:block;border:0;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow: hidden;visibility: hidden;}
+.clearfix{zoom:1;}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 14px;
+}
+.headTop{
+    width:100%;
+    height:83px;
+    /*position: absolute;*/
+    /*top: 0;*/
+    z-index: 10;
+}
+
+.header-container{
+    width: 100%;
+    height: 83px;
+}
+#pox{
+    width: 1263px;
+    /*padding-left:12px ;*/
+/*  padding-left:12px ;*/   
+    margin: 0 auto;
+}
+.head-a{
+    width: 1263px;
+    height: 46px;
+    margin: 0 auto;
+    background: #303030;
+    
+}
+.container{
+    width: 664px;
+    line-height: 46px;
+    height:46px;
+    background: #333;
+    float: left;
+    padding-left: 12px;
+}
+/*.pr{
+    height: 46px;
+}*/
+/*logo*/
+.container h1{
+    float: left;
+    width: 100px;
+    height: 38px;
+    background:url(../../img/nuandao.png) no-repeat -50px -280px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    float:left;
+    text-indent: -999em;
+    z-index: 1;
+}
+/*搜索框*/
+.container .head-search{
+    float: left;
+    padding-top: 5px;
+    
+}
+.head-search .header-search-input{
+    display: block;
+    width: 360px;
+    height: 36px;
+    padding: 4px 0 5px 30px;
+    background: #fff;
+    font-size: 16px;
+    margin-left: 16px;
+}
+/*搜索图标*/
+.head-search i{
+    width: 13px;
+    height: 13px;
+    background:url(../../img/nuandao.png) no-repeat -260px -280px;
+    left: 140px;
+    top: 17px;
+    position: absolute;
+}
+/*优惠标题*/
+.container .header-hirt{
+    float: left;
+    display: block;
+    font-size: 13px;
+    line-height:46px;
+    color:#e396ff;
+    margin-left: 15px;
+}
+/*右侧小列表*/
+.head-a .nav{
+    float: right;
+    width: 575px;
+    height:46px;
+    line-height: 46px;
+    padding-right: 12px;
+}
+.head-a .nav a{
+    display: block;
+    float: right;
+}
+.head-a .nav li{
+    float: right;
+    font-size: 12px;
+}
+.head-a .nav .a-w{
+    width: 10px;
+    text-align: center;
+}
+/*微博标志*/
+.head-a .nav li:nth-child(1){
+    width: 121px;
+    height:46px;
+    line-height: 46px;
+}
+
+.head-a .nav .nav-fnum{
+    display: inline-block;
+    width: 57px;
+    position: relative;
+    margin-left: 2px;
+}
+.head-a .nav .nav-fnum i{
+    display: inline-block;
+    width: 57px;
+    height: 20px;
+    position: absolute;
+    top: 21px;
+    background: url(../../img/bg_flbtn-1.png) no-repeat -190px -16px ;
+}
+.head-a .nav .span-fnum{
+    display: inline-block;
+    margin-left:6px;
+    width: 48px;
+    height: 20px;
+    color: #333;
+    background: #fcf8ea;
+    border: 1px solid #ecd181;
+    line-height: 20px;
+    text-align: center;
+}
+.head-a .nav .nav-add{
+    display: inline-block;
+    width: 62px;
+    height: 20px;
+    text-align: center;
+}
+.head-a .nav .span-add{
+    display: inline-block;
+    line-height: 20px;
+    width:52px;
+    color: #fff;
+    height: 20px;
+    background: url(../../img/bg_flbtn.png) no-repeat -63px 0;
+    padding-left:15px ;
+}
+/*登录|注册*/
+.head-a .nav li:nth-child(2){
+    width: 80px;
+    height: 22px;
+    border: 1px solid #fff ;
+    text-align: center;
+    background: #333333;
+    line-height: 20px;
+    margin-top:12px ;
+    color: #fff;
+    font-size: 14px;
+    margin-right: 29px;
+    padding-right: 11px;
+}
+.head-a .nav li:nth-child(3){
+    width: 53px;
+    text-align: center;
+    color: #fff;
+}
+/*购物车*/
+.nav .nav-car{
+    width: 96px;
+    height: 20px;
+    color: #cdcdcd;
+    text-align: center;
+}
+.nav .nav-car span{
+    font-size:14px ;
+    background: url(../../img/nuandao.png) no-repeat -340px -88px;
+    padding-left:23px ;
+}
+.nav .nav-car .nav-num{
+    font-size:14px ;    
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    color: #FFFFFF;
+    line-height: 20px;
+    background: #3ec0a3;
+    margin-left:4px ;
+}
+
+/*head-b左侧的列表*/
+.head-b{
+    width: 100%;
+    height: 37px;
+    background: #fff;
+}
+.head-b .nav-bottom{
+    width: 1263px;
+    height:36px;
+    margin: 0 auto;
+    border-bottom: 1px solid #c7c7c7;
+}
+.head-b .nav-bottom .nav-left{
+    float: left;
+    padding-left:12px ;
+}
+.head-b .nav-bottom .nav-left li{
+    float: left;
+    width: 85px;
+    line-height:36px;
+}
+.head-b .nav-bottom .nav-left li>a{
+    font-size: 14px;
+    color: #303030;
+    height: 35px;
+    width: 60px;
+    display: block;
+}
+.head-b .nav-bottom .nav-left li:nth-child(1)>a{
+    color:#a24ac2 !important;
+}
+.head-b .nav-bottom .nav-left li:nth-child(7)>a{
+    color:#a24ac2 !important;
+}
+.nav-bottom .nav-left li>a:hover{
+    border-bottom: 1px solid #226f5e;
+    color:#226f5e ; 
+}
+.head-b .nav-bottom .nav-right{
+    float: right;
+}
+.head-b .nav-bottom .nav-right li{
+    float: left;
+}
+.nav-bottom .nav-right{
+    width: 248px;
+    height: 36px;
+    line-height:36px ;
+    font-size: 13px;
+} 
+.nav-bottom .nav-right li{
+    margin-left: 16px;
+    position: relative;
+}
+.nav-bottom .nav-right li>a{
+    color:#8f8f8f;
+}
+.nav-bottom .nav-right li:nth-child(1){
+    margin-left: 0;
+    width: 127px;
+}
+/*head-b  右侧*/
+.nav-right li:nth-child(1) span{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    padding-top:20px ;
+    margin-right: 4px;
+    background: url(../../img/nuandao.png) no-repeat -200px -280px;
+    position: absolute;
+    top: 11px;
+    left: -20px;
+}
+.nav-right li:nth-child(2) span{
+    display: inline-block;
+    width: 14px;
+    height: 18px;
+    background: url(../../img/nuandao.png) no-repeat -160px -280px;
+    position: absolute;
+    top: 9px;
+    left: -20px;
+}
+.nav-bottom .nav-right li:nth-child(3) span{
+    text-indent: -999em;
+    display: inline-block;
+    width: 24px;
+    height: 18px;
+    background: url(../../img/nuandao.png) no-repeat -220px -280px;
+    position: absolute;
+    left: 3px;
+    top: 9px;
+}
+.nav-right li>a .phone{
+    position: absolute;
+    width: 108px;
+    height: 359px;
+    background: url(../../img/phone1.png) no-repeat;
+    top: 28px;
+    right: -25px;
+    z-index: 10;
+    display: none;
+}
+
+.nav-right li:nth-child(3) .wecaht{
+    position: absolute;
+    width: 101px;
+    height: 110px;
+    background: url(../../img/weixin-1.png) no-repeat;
+    top: 26px;
+    right: -30px;
+    z-index: 10;
+    display: none;
+}
+
+
+//中间商品
+.girl{
+    display: none;
+    width: 1263px;
+    height: 348px;
+    position: absolute;
+    background: #FFFFFF;
+    left: 0;
+    top: 82px;
+    z-index: 5;
+    border-top: 1px solid #C7C7C7;      
+    border-bottom: 1px solid #C7C7C7;      
+    .contain{
+        width: 1240px;
+        height: 348px;
+//      padding-left: 12px;  
+        margin: 0 auto;
+//      z-index: 9999;
+//      background: yellow;
+        .nav-list{
+            width: 432px;
+            height: 318px;
+//          background: pink;
+            padding-top: 30px;
+            border-right :1px solid #ededed;
+            float: left;
+            h3{
+                font-size: 14px;
+                color: #a3a3a3;
+                height: 40px;
+                line-height:40px ;
+                width: 432px;
+            }
+            .navbox{
+                float: left;
+                width:56px ;
+                height:277px;
+                margin-right: 64px;
+                a{
+                    display: block;
+                    width: 56px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 24px;
+                    color: #303030;
+                }
+                a:hover{
+                    color: #226f5e;
+                }
+            }
+        }
+        .recommend{
+            float: left;
+            width: 807px;
+            height: 318px;
+//          background: deepskyblue;
+            padding-top: 30px;
+            h3{
+                font-size: 14px;
+                color: #a3a3a3;
+                height: 40px;
+                line-height:40px ;
+                width: 807px;
+                margin-left: 90px;
+            }
+            .recommend-nav{
+                width: 67px;
+                height: 277px;
+                line-height: 27px;
+                text-align: center;
+                margin-left: 90px;
+                float: left;
+                a{
+                    display: block;
+                    width: 56px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 24px;
+                    color: #303030;
+                }
+                .checked{
+                    color: #226f5e;
+                }
+                a:hover{
+                    color: #226f5e;
+                }
+            }
+                .recommend-show{
+                    float: left;
+                    width: 300px;
+                    height: 230px;
+//                  padding-top: 4px;
+//                  background: red;
+                    margin-left: 50px;
+                    a{// a  标签
+                        float: left;
+                        display: block;
+                        width: 94px;
+                        height: 94px;
+                        margin-right:6px;
+                        margin-top: 10px;
+                        
+                        .header-nav-img{//  图片
+                            display: inline-block;
+                            width: 94px;
+                            height: 94px;
+
+                        }   
+                    }
+                }
+        }
+        
+    }
+    
+}
+
+//  内容部分
+.gooder{
+    width: 100%;
+    margin-top: 60px;
+    .good{
+        width: 988px;
+        height: 360px;
+        background: red;
+        margin: 0 auto;     
+        .g-left{
+            width: 360px;
+            height: 360px;
+            float: left;
+//          padding-right: 40px;
+            img{
+                width: 360px;
+                height:360px;
+            }
+      
+        }
+        .g-right{
+            width: 590px;
+            height:340px;
+            float: right;
+            .r-top{
+                h4{
+                    font-size: 20px;
+                    color: #303030;
+                    height: 30px;
+                    line-height: 30px;
+                }
+                h5{
+                    font-size: 16px;
+                    color: #303030;
+                    height: 55px;
+                    line-height: 50px;
+                }
+                .p1{
+                    height:48px ;
+                    color: #848484;
+                    line-height:25px ;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+            }
+            .r-bot{
+                width: 590px;
+                margin-top: 38px;
+                border-top:1px dashed #dfdfdf;
+                padding-top: 20px;
+                div{
+                    img{
+                        padding-right: 20px;
+                    }
+                }
+            }
+        }   
+    }
+    
+}
+
+
+
+//  商品的列表
+
+.many{
+    width: 988px;
+    height:2000px;
+    background: dodgerblue;
+    margin: 80px auto 0;
+    .no{
+        margin-right: 0;
+    }
+    .thing{
+        margin-right: 20px;
+        float: left;
+        width:232px;
+        a{
+            img{
+                width: 232px;
+                height: 232px;
+            }
+        }
+        ul{
+            .title{
+                a{
+                    color: #515050;
+                    font-size: 14px;
+                    display: block;
+                    width: 232px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            .price{
+                float: left;
+                line-height: 16px;
+                .price-new{
+                    color: #3ec0a3;
+                    font-size: 12px;
+                }
+                .price-diff{
+                    margin-left: 10px;
+                    margin-right: 8px;
+                    width: 0;
+                    height: 14px;
+                    border-left: 2px solid #dfdfdf;
+                    display: inline-block;
+                }
+                .price-old{
+                    color: #acacac;
+                    font-size: 12px;
+                    font-weight: bolder;
+                }
+            }
+            .like{
+//              position: absolute;
+//              right: 0;
+//              bottom: -2px;
+                width: 60px;
+//              background: green;
+                color: #848484;
+                font-size: 15px;
+                text-align: right;
+                cursor: pointer;
+                float: right;
+            }
+            i{
+                display: inline-block;
+                width: 18px;
+                height: 15px;
+                background: url(../../img/nuandao.png) no-repeat -40px -126px;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*底部*/
+.f-top{
+    width: 1239px;
+    height: 264px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: #303030;
+    margin: 90px auto 0; 
+}
+.f-top .f-l{
+    float: left;
+}
+.f-top .f-l>ul>li{
+    float: left;
+    margin-left: 110px;
+    margin-top: 37px;
+    height: 38px;
+    line-height: 38px;
+    
+}
+.f-top .f-l>ul>li>a{
+    color: #dfdfdf;
+}
+.f-top .f-l>ul>li:nth-child(1){
+    margin-left: 0;
+}
+.f-top .f-l>ul>li>ul>li{
+    height: 38px;
+    line-height: 39px;
+}
+.f-top .f-l>ul>li>ul>li>a{
+    height: 38px;
+    color: #666;
+    line-height: 39px;
+}
+.f-top .f-l>ul>li>ul>li>a:hover{
+    color: #dfdfdf;
+}
+.f-r{
+    width: 320px;
+    float: right;   
+    margin-top: 37px;
+}
+.f-r h5{
+    width: 320px;
+    font-size: 15px;
+    height: 38px;
+    line-height: 38px;
+    color: #dfdfdf;
+}
+.f-r #f-search{
+    width: 320px;
+    height: 54px;
+    margin-top: 12px;
+    position: relative;
+    font-size: 14px;
+}
+
+.f-r #f-search #txt2{
+    width: 234px;
+    height: 54px;
+    padding-left:14px ;
+    border:none;
+    line-height: 54px;
+    background: #434343;
+    color: #8b8b8b;
+}
+.f-r #f-search #email{
+    width: 72px;
+    height: 54px;
+    border: none;
+    text-indent: -999px;
+    background: #4b4b4b;
+}
+.f-r #f-search i{
+    display: block;
+    width: 32px;
+    height: 22px;
+    background: url(../../img/nuandao.png) no-repeat -200px 0;
+    position: absolute;
+    left: 270px;
+    top: 16px;
+}
+.f-r ul{
+    width: 320px;
+    height: 30px;
+    margin-top: 45px;
+}
+.f-r ul li{
+    float: left;
+}
+.f-r ul li>a{
+    height: 30px;
+    display: block;
+}
+
+.f-r ul li:nth-child(1){
+    margin-left: 24px;
+}
+.f-r ul li:nth-child(1) a{
+    width: 38px;
+    height: 30px;
+    background: url(../../img/nuandao.png) no-repeat 0 -11px;
+}
+.f-r ul li:nth-child(1) a:hover{
+    background: url(../../img/nuandao.png) no-repeat 0 -51px;
+}
+
+
+.f-r ul li:nth-child(2){
+    margin-left: 30px;
+    position: relative;
+}
+.f-r ul li:nth-child(2) a{
+    width: 35px;
+    height: 30px;
+    background: url(../../img/nuandao.png) no-repeat -5px -178px;
+}
+.f-r ul li:nth-child(2) span{
+    display: block;
+    width: 105px;
+    height: 116px;
+    background:url(../../img/QR-weixin-1.png) no-repeat;
+    position: absolute;
+    top: -126px;
+    left: -40px;
+    display: none;
+}
+.f-r ul li:nth-child(2) a:hover{
+    background: url(../../img/nuandao.png) no-repeat -5px -219px;
+    
+}
+
+
+.f-r ul li:nth-child(3){
+    margin-left: 29px;
+}
+.f-r ul li:nth-child(3) a{
+    width: 35px;
+    height: 31px;
+    background: url(../../img/nuandao.png) no-repeat -50px -177px;
+}
+.f-r ul li:nth-child(3) a:hover{
+    background: url(../../img/nuandao.png) no-repeat -50px -218px;
+    
+}
+
+
+
+.f-r ul li:nth-child(4){
+    margin-left: 25px;
+}
+.f-r ul li:nth-child(4) a{
+    width: 35px;
+    height: 30px;
+    background: url(../../img/nuandao.png) no-repeat -40px -11px;
+}
+.f-r ul li:nth-child(4) a:hover{
+    background: url(../../img/nuandao.png) no-repeat -40px -51px;
+    
+}
+
+
+
+.f-r ul li:nth-child(5){
+    margin-left: 26px;
+}
+.f-r ul li:nth-child(5) a{
+    width: 35px;
+    height: 28px;
+    background: url(../../img/nuandao.png) no-repeat -160px -15px;
+}
+.f-r ul li:nth-child(5) a:hover{
+    background: url(../../img/nuandao.png) no-repeat -160px -55px;
+    
+}
+
+/*f-bot   版权使用权限*/
+.f-bot{
+    width: 1239px;
+    height: 116px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+    /*background: red;*/
+}
+.f-bot .ul-bot{
+    width: 1048px;
+    height: 26px;
+    padding-top: 15px ;
+    /*background: forestgreen ;*/
+}
+.f-bot .ul-bot>li{
+    float: left;
+}
+.f-bot .ul-bot .li-1{
+    width: 31px;
+    text-align: center;
+}
+.f-bot .ul-bot>li a{
+    font-size:12px ;    
+    color: #303030;
+}
+.f-bot div{
+    font-size:12px ;    
+    color: #303030;
+    
+}
+.ul-left{
+    float:left;
+}
+.ul-right{
+    padding-top: 15px;
+    width: 191px;
+    height:101px ;
+    /*background: pink;*/
+    float: right;   
+}
+.ul-right .right-b{
+    text-align: right;
+    color: #000;
+    font-size: 12px;
+}
+.ul-right .right-b p{
+    height: 25px;
+    line-height: 25px;
+}
+
+/*回到顶部*/
+.to-top{
+    width: 41px;
+    height: 41px;
+    background: #a4a4a4;
+    position: absolute;
+    top: 2549px;
+    right: 0px;
+}
+.to-top i{
+    display: block;
+    width: 20px;
+    height: 12px;
+    background:url(../../img/nuandao.png) no-repeat -200px -22px;
+    position: absolute;
+    top: 14px;
+    left: 10px;
+}

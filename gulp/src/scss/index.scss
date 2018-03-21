@@ -1,5 +1,4 @@
 /*全局样式*/
-/*全局样式*/
 @charset "utf-8";
 html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin:0;padding:0}
 body{font-family: "微软雅黑";}
@@ -22,14 +21,15 @@ body{
 }
 .headTop{
     width:100%;
+    height:83px;
     /*position: absolute;*/
     /*top: 0;*/
-    z-index: 999;
+    z-index: 10;
 }
+
 .header-container{
     width: 100%;
     height: 83px;
-
 }
 #pox{
     width: 1263px;
@@ -227,23 +227,23 @@ body{
 }
 .head-b .nav-bottom .nav-left li{
     float: left;
-    width: 60px;
+    width: 85px;
     line-height:36px;
-    margin-right: 25px;
 }
-.head-b .nav-bottom .nav-left li a{
+.head-b .nav-bottom .nav-left li>a{
     font-size: 14px;
     color: #303030;
     height: 35px;
+    width: 60px;
     display: block;
 }
-.head-b .nav-bottom .nav-left li:nth-child(1) a{
+.head-b .nav-bottom .nav-left li:nth-child(1)>a{
     color:#a24ac2 !important;
 }
-.head-b .nav-bottom .nav-left li:nth-child(7) a{
+.head-b .nav-bottom .nav-left li:nth-child(7)>a{
     color:#a24ac2 !important;
 }
-.nav-bottom .nav-left li a:hover{
+.nav-bottom .nav-left li>a:hover{
     border-bottom: 1px solid #226f5e;
     color:#226f5e ; 
 }
@@ -263,7 +263,7 @@ body{
     margin-left: 16px;
     position: relative;
 }
-.nav-bottom .nav-right li a{
+.nav-bottom .nav-right li>a{
     color:#8f8f8f;
 }
 .nav-bottom .nav-right li:nth-child(1){
@@ -301,7 +301,7 @@ body{
     left: 3px;
     top: 9px;
 }
-.nav-right li a .phone{
+.nav-right li>a .phone{
     position: absolute;
     width: 108px;
     height: 359px;
@@ -322,71 +322,201 @@ body{
     z-index: 10;
     display: none;
 }
-/*轮播图*/
-.banner{
-    position:relative;
+
+.girl{
+    display: none;
     width: 1263px;
-    height: 400px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.img-list{
+    height: 348px;
     position: absolute;
-    left:0;
-    top:0;
-    width: 3789px;
-    height: 400px;
-}
-.img-list li{
-    float: left;
+    background: #FFFFFF;
+    left: 0;
+    top: 82px;
+    z-index: 5;
+    border-top: 1px solid #C7C7C7;      
+    border-bottom: 1px solid #C7C7C7;      
+    .contain{
+        width: 1240px;
+        height: 348px;
+//      padding-left: 12px;  
+        margin: 0 auto;
+//      z-index: 9999;
+//      background: yellow;
+        .nav-list{
+            width: 432px;
+            height: 318px;
+//          background: pink;
+            padding-top: 30px;
+            border-right :1px solid #ededed;
+            float: left;
+            h3{
+                font-size: 14px;
+                color: #a3a3a3;
+                height: 40px;
+                line-height:40px ;
+                width: 432px;
+            }
+            .navbox{
+                float: left;
+                width:56px ;
+                height:277px;
+                margin-right: 64px;
+                a{
+                    display: block;
+                    width: 56px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 24px;
+                    color: #303030;
+                }
+                a:hover{
+                    color: #226f5e;
+                }
+            }
+        }
+        .recommend{
+            float: left;
+            width: 807px;
+            height: 318px;
+//          background: deepskyblue;
+            padding-top: 30px;
+            h3{
+                font-size: 14px;
+                color: #a3a3a3;
+                height: 40px;
+                line-height:40px ;
+                width: 807px;
+                margin-left: 90px;
+            }
+            .recommend-nav{
+                width: 67px;
+                height: 277px;
+                line-height: 27px;
+                text-align: center;
+                margin-left: 90px;
+                float: left;
+                a{
+                    display: block;
+                    width: 56px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-top: 24px;
+                    color: #303030;
+                }
+                .checked{
+                    color: #226f5e;
+                }
+                a:hover{
+                    color: #226f5e;
+                }
+            }
+                .recommend-show{
+                    float: left;
+                    width: 300px;
+                    height: 230px;
+//                  padding-top: 4px;
+//                  background: red;
+                    margin-left: 50px;
+                    a{// a  标签
+                        float: left;
+                        display: block;
+                        width: 94px;
+                        height: 94px;
+                        margin-right:6px;
+                        margin-top: 10px;
+                        
+                        .header-nav-img{//  图片
+                            display: inline-block;
+                            width: 94px;
+                            height: 94px;
+
+                        }   
+                    }
+                }
+        }
+        
+    }
+    
 }
 
-.img-list li img{
-    width: 1263px;
+
+
+
+/*轮播图*/
+.wrap-banner{
     height: 400px;
+    margin: 0 auto;
+    .banner{
+        width:  1263px;
+        height: 400px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        .img-list{
+            width: 400%;
+            position: absolute;
+            li{
+                float: left;
+                img{
+                    width: 1263px;
+                    height:400px;
+                }
+            }
+        }
+        .banner-nav-list{
+            width: 351px; 
+            height: 56px;
+            position: absolute;
+            cursor: pointer;
+            bottom: 5px;
+            left: 455px;
+            opacity: 0;
+//          filter: alpha(opacity=0);
+            li{
+                line-height: 56px;
+                color: #999;
+                width: 110px;
+                height: 56px;
+                font-size: 14px;
+                text-align: center;
+                background: rgba(0,0,0,0.8);
+                float: left;
+                margin-right: 10px;
+            }
+            li:nth-child(3){
+                margin-right: 0;
+            }
+            .avtive{
+                color: #FFFFFF !important;
+            }
+        }
+        #btn_l{
+            position: absolute;
+            background: url(../../img/btn.gif) no-repeat;
+            height: 60px;
+            width: 60px;
+            left: -60px;
+            top: 170px;
+            z-index: 1001;
+            opacity: 0.6;
+        }
+        #btn_r{
+            position: absolute;
+            background: url(../../img/btn.gif) no-repeat 0 -60px;
+            height: 60px;
+            width: 60px;
+            right: -60px;
+            top: 170px;
+            z-index: 1001;
+            opacity: 0.6;
+//          filter: alpha(opacity=0);
+        }
+    }
 }
-.banner-nav-list{
-    list-style:none;
-    position: absolute;
-    right:516px; 
-    bottom:5px;
-    opacity: 0;
-}
-.banner-nav-list li {
-    background: rgba(0,0,0,0.8);
-    float: left;
-    width: 110px; 
-    height: 56px;
-    margin-right: 10px;
-    cursor: pointer;
-    text-align: center;
-    line-height: 56px;
-    color: #999;
-    font-size: 14px;
-}
-.banner-nav-list li.avtive{
-    color: #fff;
-}
-.banner .toLeft {
-    width: 38px;
-    height: 50px;
-    background:#e4e4e4 url(../../img/flexslider-direction-11.png) no-repeat 5px 7px;
-    position: absolute;
-    left: -38px; 
-    top: 160px;
-    z-index: 99;
-    /*opacity: 0;*/
-}
-.banner .toRight {
-    width: 38px;
-    height: 50px;
-    background:#e4e4e4 url(../../img/flexslider-direction-11.png) no-repeat 10px -40px;
-    position: absolute;
-    right: -38px; 
-    top: 160px;
-    z-index: 99;
-    /*opacity: 0;*/
-}
+
+
+
 /*轮播图下的标题*/
 .ban-tit{
     width: 1263px;
@@ -398,6 +528,8 @@ body{
 .ban-tit img{
     margin: 0 auto;
 }
+
+
 /*今日热点*/
 .sale-today{
     width: 1263px;
@@ -785,7 +917,7 @@ body{
     height: 41px;
     background: #a4a4a4;
     position: absolute;
-    top: 3478px;
+    top: 3395px;
     right: 0px;
 }
 .to-top i{
@@ -794,6 +926,6 @@ body{
     height: 12px;
     background:url(../../img/nuandao.png) no-repeat -200px -22px;
     position: absolute;
-    top: px;
+    top: 14px;
     left: 10px;
 }

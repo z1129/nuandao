@@ -4,10 +4,11 @@ var sass = require('gulp-sass');
 var rename = require('gulp-rename');
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
+//var babel = require('gulp-babel');
 //创建并发布任务
 gulp.task('sass',function(){
 	//找取所有的scss文件，                  调用编译sass插件               重命名     压缩    放到目标目录中
-	return gulp.src('src/scss/*.scss').pipe(sass()).pipe(rename({"suffix":".min"})).pipe(cssnano()).pipe(gulp.dest('css'));
+	return gulp.src('src/scss/*.scss').pipe(sass()).pipe(rename({"suffix":".min"})).pipe(gulp.dest('css'));
 })
 //创建并发布压缩js
 gulp.task('script',function(){
