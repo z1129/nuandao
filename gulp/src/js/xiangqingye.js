@@ -11,6 +11,12 @@ $(function(){
 	})
 	
 
+	// 二级菜单(类似版)	
+	$(".nav-left li").mouseenter(function(){
+		$(this).children('div').css("display","block");
+	}).mouseleave(function(){
+		$(this).children('div').css("display","none");
+	})
 	
 	
 		

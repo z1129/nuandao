@@ -15,10 +15,9 @@ img{display:block;border:0;}
 
 body{
     width: 100%;
-//  background: url(../../img/default-bkg.jpg) no-repeat;
+    background: url(../../img/default-bkg.jpg) no-repeat;
     z-index: -999;
     overflow:hidden ;
-    
 }
 
 /*头部*/
@@ -190,14 +189,18 @@ body{
                         color: #ababab;
                     }
                     .weibo{
-                        border: none;
                         display: block;
                         width: 278px;
                         height: 40px;
-                        border: 1px solid dodgerbluen;
+                        color: #d23838;
+                        border: none;
+                        font-size: 18px;
+                        padding-left: 10px;
+                        border: 1px solid #FF0000;
                         background: #fff;
-                        color: red;
-                        font-size: 20px;
+                        background: url(../../img/sns-bind.png) no-repeat 42px -422px;
+                        
+                        
                     }
                     .a-more{
                         display: block;

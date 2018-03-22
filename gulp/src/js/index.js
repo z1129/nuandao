@@ -14,6 +14,7 @@ $(function(){
 	$(".nav-left li").mouseenter(function(){
 		$(this).children('div').css("display","block");
 	}).mouseleave(function(){
+		
 		$(this).children('div').css("display","none");
 	})
 	
@@ -50,7 +51,6 @@ $(function(){
 		$(this).find("span").stop().animate({'top':265},400);
 	}).mouseleave(function(){
 		$(this).find("span").stop().animate({'top':295},400);
-		
 	})
 	
 	/*轮播图*/
@@ -91,48 +91,7 @@ $(function(){
 		
 	})
 	
-	var btnList = $(".img-list li");
-//	console.log(btnList.length);
-	//  按钮添加点击事件
-	$("#arr .btn_l").click(function(){
-		for( var i=0; i < btnList.length; i++ ){
-   			$(".banner-nav-list li")[i].className="";
-   		}
-		
-		index--;
-		if(index < 0){
-			index = 0;
-		}
-		$(".banner-nav-list li")[index].className = 'active';
-		$(".img-list").css({"left":-index * 1263});
-		
-	})
-	
-	$("#arr .btn_r").click(function(){
-//		for( var i=0; i < btnList.length; i++ ){
-// 			$(".banner-nav-list")[i].className="";
-// 		}
-		index++;
-		if(index == btnList.length){
-			index = btnList.length - 1 ;
-		}
-		$(".img-list").css({"left":-index * 1263});
-		
-//		$('.img-list').css("left":-index * 1263);
-//		$(".banner-nav-list")[index].className = 'active';'
-	})
-	
-	
-	
-	
-	
-//	for( let i=0; i < btnList.length ;i++){
-// 		btnList[i].onmouseover=function(){
-// 			index=i-1;
-// 			autoPlay();
-// 		}
-// 	}
-	
+
 	
 	
 	

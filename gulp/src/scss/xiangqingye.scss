@@ -214,6 +214,7 @@ body{
     width: 100%;
     height: 37px;
     background: #fff;
+//  z-index: 99999;
 }
 .head-b .nav-bottom{
     width: 1263px;
@@ -341,7 +342,7 @@ body{
         height: 348px;
 //      padding-left: 12px;  
         margin: 0 auto;
-//      z-index: 9999;
+        z-index: 999;
 //      background: yellow;
         .nav-list{
             width: 432px;
@@ -587,18 +588,18 @@ body{
     .message{
         width: 1239px;
         height: 690px;
-        background: red;
+//      background: red;
         padding-left: 12px;
         padding-right: 12px;
         margin: 40px auto 0;
         .one{
             width: 1239px;
             height: 690px;
-            background: pink;
+//          background: pink;
             .one-top{
                 width: 1239px;
                 height: 20px;   
-                background: green;
+//              background: green;
                 .top-left{
                     width: 350px;
                     float: left;
@@ -670,17 +671,17 @@ body{
                 width: 1239px;
                 height:657px;
                 margin-top: 15px;
-                background: blue;
+//              background: blue;
                 .one-bot-left{
                     width: 465px;
                     height: 657px;
-                    background: plum;
+//                  background: plum;
                     float: left;
                 }
                  .one-bot-center{
                     width: 584px;
                     height: 657px;
-                    background: palevioletred;
+//                  background: palevioletred;
                     float: left;
                     margin-left: 40px;
                     margin-right: 15px;
@@ -703,7 +704,7 @@ body{
                     .price{
                         width: 584px;
                         height: 32px;
-                        background: yellowgreen;
+//                      background: yellowgreen;
                         .newprice{
                             height: 32px;
                             line-height: 15px;
@@ -781,7 +782,7 @@ body{
                     .num{
                         width: 584px;
                         height: 69px;
-                        background: green;
+//                      background: green;
                         margin-top: 19px;
                         label{
                             float: left;
@@ -909,12 +910,13 @@ body{
                  .one-bot-right{
                     width: 133px;
                     height: 657px;
-                    background: palegoldenrod;
+//                  background: palegoldenrod;
                     float: left;
-                    border: 1px solid #000;
+//                  border: 1px solid #000;
                 }
             }
         }
+
 //      .two{
 //          
 //      }

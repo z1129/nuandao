@@ -449,7 +449,7 @@ body{
     .good{
         width: 988px;
         height: 360px;
-        background: red;
+//      background: red;
         margin: 0 auto;     
         .g-left{
             width: 360px;
@@ -509,14 +509,14 @@ body{
 
 .many{
     width: 988px;
-    height:2000px;
-    background: dodgerblue;
+    height:1500px;
+//  background: dodgerblue;
     margin: 80px auto 0;
     .no{
         margin-right: 0;
     }
     .thing{
-        margin-right: 20px;
+        margin-right: 15px;
         float: left;
         width:232px;
         a{
@@ -837,7 +837,7 @@ body{
     height: 41px;
     background: #a4a4a4;
     position: absolute;
-    top: 2549px;
+    top: 2049px;
     right: 0px;
 }
 .to-top i{

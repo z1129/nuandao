@@ -445,7 +445,6 @@
 		<div class="wrap-message">
 			<div class="message">
 				
-				
 				<div class="one">
 					<div class="one-top">
 						<div class="top-left">
@@ -464,6 +463,8 @@
 					</div>
 					<div class="one-bot">
 						<div class="one-bot-left">
+							
+							
 							<!--放大镜 -->
 							<div class="magnifier" id="magnifier1">
 								<div class="magnifier-container">
@@ -518,14 +519,14 @@
 					
 						<div class="one-bot-center">
 							
-							<dt>MiniCyber△星月choker</dt>
+							<dt class="name" data-good-id="sp1">MiniCyber△星月choker</dt>
 							<dd class="brand">
 								<a href="/brand/4776-0/MiniCyber" title="查看'MiniCyber'主页">
 									<span class="inlineblock brands-title">MiniCyber</span>
 								</a>
 							</dd>
 							<dd class="price">
-								<span class="newprice">¥159</span>
+								<span class="newprice">159RMB</span>
 								<span class="old">¥169</span>
 								</span>
 								<div class="comment">
@@ -539,7 +540,7 @@
 								<label>系列</label>
 								<div>
 									<a class="clicked" href="/product/174823?fm=series">
-										<img title="MiniCyber△星月choker"  src="../img/566006a033e50-100.jpg">
+										<img title="MiniCyber△星月choker" class="srcc"  src="../img/566006a033e50-100.jpg">
 									</a>
 									
 									<a class="clicked" href="/product/174823?fm=series">
@@ -723,7 +724,7 @@
 								<img src="http://jc.nuandaojs.com/Public/images/p-ibelieve1009.jpg" alt="">
 							</div>
 							<div class="extra">
-				      		          <i>该商品参加<span class="text-error">满249包邮</span>活动</i> 
+				      		          <i></i> 该商品参加<span class="text-error">满249包邮</span>活动
 							</div>
 				            <!--加入购物车 END-->
 										            	
@@ -731,17 +732,14 @@
 							
 						</div>
 						<div class="one-bot-right">
-							
+							<img src="../img/0000.png"/>
 						</div>
 					</div>
 				</div>
 				
 				
 				
-				<div class="two">
-					
-				</div>
-				
+
 				
 				
 				<div class="three">
@@ -764,10 +762,10 @@
 		
 		
 		
-		
+		<!--  名称    品牌    数量  价钱    -->
 		
 				<!--foot  底部-->
-		<!--<div class="footer">
+		<div class="footer">
 			<div class="f-top">
 				<div class="f-l">
 					<ul class="ul-1">
@@ -849,12 +847,12 @@
 				
 			</div>
 				
-		</div>-->
+		</div>
 		
 		<!--回到顶部-->
-		<div class="to-top">
+		<!--<div class="to-top">
 			<i></i>
-		</div>
+		</div>-->
 		
 		<!--联系客服-->
 		<div class="tel">
@@ -870,6 +868,8 @@
 		<script type="text/javascript" src="../gulp/js/jquery-1.11.3.min.js" ></script>
 		<script type="text/javascript" src="../gulp/js/xiangqingye.min.js" ></script>
 		<script type="text/javascript" src="../gulp/js/magnifier.js" ></script>
+		<script type="text/javascript" src="../gulp/js/jquery.cookie.js" ></script>
+		<script type="text/javascript" src="../gulp/js/requestAnimationFrame.js" ></script>
 		<script type="text/javascript">
 			$(function() {
 				
@@ -893,5 +893,72 @@
 				*/
 			});
 			</script>
+			
+			<!--购物车-->
+			<script>
+				$(function(){
+					/*点击购物车*/
+					$("#add-cart").click(function(){
+						// 获取商品id
+						var id = $(this).parent().parent().siblings(".name").attr("data-good-id");
+						//获取商品的name   名称
+						var name = $(this).parent().parent().siblings(".name").html();
+//						console.log(name);//  加入购物车
+						
+						// 获取商品的品牌
+						var brand = $(this).parent().parent().siblings(".brand").find("span").html();
+						console.log(brand);
+						// 获取商品价格
+						var price = parseFloat($(this).parent().parent().siblings(".price").children(".newprice").html());
+//						console.log(price);
+						// 获取数量
+						var num = $(this).parent().parent().siblings().find('input').val();
+//						console.log(num);
+						// 图片路径
+						var src = $(this).parent().parent().siblings(".color").children().next().find('img').attr('src');
+//						console.log(src);
+						
+						
+						// 获取cookie
+						var cartStr = $.cookie("cart") ? $.cookie("cart") : "";
+						// 将cookie转换成字符串
+						var cartObj = convertCartStrToObj(cartStr);
+						if(id in cartObj){
+							cartObj[id].num++;
+							
+						}else{
+							cartObj[id] = {
+								"name" : name,
+								"price" : price,
+								"brand" : brand,
+								"src" : src,
+								"num" :1
+							}
+						}
+//						console.log(cartObj.brand);
+//						console.log(JSON.stringify(cartObj));
+						// 将cookObj转换为字符串填入cookie
+						$.cookie("cart",JSON.stringify(cartObj),{expires : 7,path : "/"});
+//						$.cookie("hahah","41353",{expires : 7,path : "/"});
+						
+						
+						
+						
+						window.location = "car.html";
+					});
+					
+				})
+//						$.cookie("cart","41353",{expires : 7,path : "/"});
+				
+				
+				//字符串转对象
+				function convertCartStrToObj(str){
+					if(!str){
+						return {};
+					}
+					return JSON.parse(str);
+				}
+			</script>
+		
 	</body>
 </html>
