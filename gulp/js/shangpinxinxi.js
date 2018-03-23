@@ -1,12 +1,12 @@
 ///*商品列表*/
 $(function(){
-	
-	$.getJSON("../gulp/src/js/goods.json",function(data){
+//	console.log($(".many"));
+	$.getJSON("../gulp/js/goods.json",function(data){
 		let div;
-//		console.log(data);
+		console.log(data);
 		$(data).each(function(index,value){
 			div = `<div class="thing no enter">
-						<a href="#">
+						<a href="../html/xiangqingye.html">
 							<img src="${value.src}"/>
 						</a>
 						<ul>
@@ -24,6 +24,7 @@ $(function(){
 							</li>
 						</ul>
 					</div>`;
+					console.log(div);
 			$(".many").append(div);
 	
 //			console.log(index.left);
